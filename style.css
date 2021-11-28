@@ -354,6 +354,7 @@ body {
 }
 #timeliner .landing-logo .left{
     transform-origin:9rem .25rem
+    
 }
 #timeliner .landing-logo .right{
     transform-origin:-5.5rem .25rem
@@ -361,6 +362,7 @@ body {
 #timeliner @keyframes {
     to{
         transform:rotate(1turn)
+        
     }
 }
 #timeliner .landing{
