@@ -303,7 +303,7 @@ header.sticky .links:hover{
     margin: 0;
 }
 // Aimation 
-.active-event{
+#active-event{
 animation: 1s blink-slow step-end infinite;
 }
 @keyframe blink-slow{
