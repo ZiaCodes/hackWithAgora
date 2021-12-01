@@ -302,3 +302,24 @@ header.sticky .links:hover{
     color: #525480;
     margin: 0;
 }
+// Aimation 
+.active-event{
+animation: 1s blink-slow step-end infinite;
+}
+@keyframe blink-slow{
+
+	0%, 100% {
+    color: transparent;
+}
+	50% {
+    color: var(--text-color);
+}
+	
+}
+
+
+	
+	
+	
+	
+	
