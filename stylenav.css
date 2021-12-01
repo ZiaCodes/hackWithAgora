@@ -306,15 +306,13 @@ header.sticky .links:hover{
 #active-event{
 animation: 1s blink-slow step-end infinite;
 }
-@keyframe blink-slow{
-
-	0%, 100% {
-    color: transparent;
-}
-	50% {
-    color: var(--text-color);
-}
-	
+@keyframes blink-slow {
+    from,to{
+        color: transparent;
+    }
+    50%{
+        color: #525480;
+    }
 }
 
 
