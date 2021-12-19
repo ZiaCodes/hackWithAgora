@@ -1,0 +1,34 @@
+<form action="/submit" method="POST" class="register">
+
+                         <div class="profile__img__blog">
+                            <img src="./assets/img/logo.png" alt="" class="profile">
+                        </div>
+
+                        <h2 class="title">HackWithAgora</h2>
+
+                        <div class="alert alert-success" role="alert">
+  	                        <h3 style="color:lightgreen">{{success}} </h3>
+		                </div>
+		                <div class="alert alert-danger" role="alert">
+			                <h3 style="color:Tomato">{{error}}</h3>
+                        </div>
+
+                        <div class="input__blog">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Name of the team" name="nameoftheteam" value="" maxlength="30" required>
+                        </div>
+                    
+                        <div class="input__blog">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="E-mail" name="email" value="" maxlength="30" required>
+                        </div>
+
+                        <div class="input__blog">
+                            <i class="fas fa-link"></i>
+                            <input type="text" placeholder="Project Link" name="projectlink" value="" required>
+                        </div>
+
+                        <input type="submit" value="submit" class="btn login">
+                        <p class="signin__text">Submission <a href="guidline.hbs">Guidline</a></p>
+
+                    </form>

@@ -1,0 +1,39 @@
+ <!-- Projects -->
+
+    <div class="section-header pt-0 pb-4 overflow-hidden text-center " id="sponsors">
+      <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-12 col-md-8">
+                  <div class="alert shadow-inset ">
+                          
+                      <h3>
+                          Best Projects
+                      </h3>
+                     
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <section class="slider slider-wrapper container pt-5" id="app">
+    <div class="slide p-1 m-2" v-for="sp in sponsors">
+      <a  class="profile-card mb-5" :href="`${sp.link}`">
+          <div class="card bg-primary shadow-soft border-light">
+              <div class="bg-primary shadow-inset border border-light rounded p-3 m-2 d-flex justify-content-center">
+                  <img :src="`img/sponsor/${sp.logo}`" class="card-img-top rounded" :alt="`${sp.name}`" style="height: 40px; width: auto;">
+              </div>
+              <div class="p-2 pt-0">
+                  <h3 class="h5 mb-2 text-center"><b>{{sp.name}}</b></h3>
+
+              </div>
+          </div>
+      </a>
+
+
+    </div>   
+
+  </section>
+
+<!--Project End -->

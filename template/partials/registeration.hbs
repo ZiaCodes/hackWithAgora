@@ -1,0 +1,52 @@
+ <div class="forms">
+
+            <div class="sign__blog">
+
+
+                    <form action="/register" method="POST" class="signin">
+
+                       <div class="profile__img__blog">
+                            <img src="./assets/img/logo.png" alt="" class="profile">
+                        </div>
+
+                        <h2 class="title">Register</h2>
+                        
+                        <div class="alert alert-success" role="alert">
+  	                        <h3 style="color:lightgreen">{{success}} </h3>
+		                </div>
+		                <div class="alert alert-danger" role="alert">
+			                <h3 style="color:Tomato">{{error}}</h3>
+                        </div>
+                        <div class="input__blog">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Full Name" name="fullname" value="" required maxlength="30"/>
+                        </div>
+                    
+                        <div class="input__blog">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="E-mail" name="email" value="" required maxlength="30"/>
+                        </div>
+                    
+                        <div class="input__blog">
+                            <i class="fas fa-university"></i>
+                            <input type="text" placeholder="College Name" name="Collegename" required value="" maxlength="50"/>
+                        </div>
+                    
+                        <div class="input__blog">
+                            <i class="fas fa-phone"></i>
+                            <input type="number" placeholder="Phone number" name="Phonenumber" value=""  maxlength="10">
+                        </div>
+
+                        <div class="input__blog">
+                            <i class="fas fa-users"></i>
+                            <input type="text" placeholder="Team Name" name="teamname" value="" required maxlength="15">
+                        </div>
+
+                        <div class="input__blog">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Other member's Name" required name="Othermembername" value="">
+                        </div>
+                    
+                        <input type="submit" value="Register" class="btn login" />
+
+                    </form>

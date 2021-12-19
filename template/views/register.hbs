@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HackWithAgora | Register Page</title>
+    <link rel="icon" type="image/png" sizes="100x60" href="./assets/img/logo.png">
+    <link rel="icon" href="./assets/img/logo.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+
+    <main class="main">
+        <div class="container">
+
+		{{!-- {{/if}} --}}
+                <!--Registration form-->
+                {{>registeration}}
+                <!--Registration form End-->
+                <!--submission form-->
+                    {{>submission}}
+                <!--submission form End-->
+
+                </div>
+
+            </div>
+
+            <div class="panels__blog">
+
+                <div class="panel left__panel">
+
+                    <div class="content">
+
+                        <h3 class="panel__title">We are back with another challange</h3>
+                        <p class="panel__text">HackWithAgora is a hackathon or problem solving challange to get the
+                                             1st and 2nd Year students into track of a softwear development as well as to
+                                             give them opportunity to learn different technologies.</p>
+                        <button class="btn transparent" id="register__btn">Submission</button>
+
+                    </div>
+                    <img src="./assets/img/undraw_Login_re_4vu2.svg" alt="" class="panel__img">
+                </div>
+
+                <div class="panel right__panel">
+
+                    <div class="content">
+
+                        <h3 class="panel__title">HackWithAgora</h3>
+                        <p class="panel__text">HackWithAgora is sponsered by <a style="text-decoration: none; color: white;" href="https://www.agora.io/"><b>Agora.io</b></a></p>
+                        <button class="btn transparent" id="signin__btn">Register</button>
+
+                    </div>
+                    <img src="./assets/img/undraw_authentication_fsn5.svg" alt="" class="panel__img">
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </main>
+
+
+
+    <script src="./assets/script.js"></script>
+
+</body>
+</html>
