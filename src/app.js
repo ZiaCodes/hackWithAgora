@@ -73,6 +73,11 @@ app.get("/successful",(req, res) =>{
     res.render("successful");
 })
 
+//download pdf
+app.get("/download",(req,res) =>{
+    res.download("theme.pdf")
+})
+
 //creating new user data
 app.post("/register",[
     check('email',"Please include a valid email").isEmail(),
