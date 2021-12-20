@@ -73,10 +73,16 @@ app.get("/successful",(req, res) =>{
     res.render("successful");
 })
 
+//Guidline page
+app.get("/register/guidline",(req, res) =>{
+    res.render("guidline");
+})
+
 //download pdf
 app.get("/download",(req,res) =>{
     res.download("theme.pdf")
 })
+
 
 //creating new user data
 app.post("/register",[
