@@ -75,8 +75,13 @@ app.get("/successful",(req, res) =>{
 })
 
 //Guidline page
-app.get("/register/guidline",(req, res) =>{
+app.get("/guidline",(req, res) =>{
     res.render("guidline");
+})
+
+//Rank page
+app.get("/ranklist",(req, res) =>{
+    res.render("ranklist");
 })
 
 //download pdf
@@ -106,8 +111,9 @@ async(req,res) =>{
        })
 
     const registered = await registerParticiepent.save();
-    console.log(registered);
-    res.status(201).render("successful");
+    // console.log(registered);
+    req.flash("success","Registration successful");
+    return res.redirect("/register");
 
     } catch (error) {
         req.flash("error","Records already registered or missing details");

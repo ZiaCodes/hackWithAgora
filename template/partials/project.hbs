@@ -1,39 +1,78 @@
- <!-- Projects -->
-
-    <div class="section-header pt-0 pb-4 overflow-hidden text-center " id="sponsors">
-      <div class="container">
-          <div class="row justify-content-center">
-              <div class="col-12 col-md-8">
-                  <div class="alert shadow-inset ">
-                          
-                      <h3>
-                          Best Projects
-                      </h3>
-                     
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
+ <!--TEAM-->
+        <div class="section-header pb-6 overflow-hidden text-center " id="project">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <div class="alert shadow-inset ">
+                                
+                                    <h1>Best Projects</h1>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-  <section class="slider slider-wrapper container pt-5" id="app">
-    <div class="slide p-1 m-2" v-for="sp in sponsors">
-      <a  class="profile-card mb-5" :href="`${sp.link}`">
-          <div class="card bg-primary shadow-soft border-light">
-              <div class="bg-primary shadow-inset border border-light rounded p-3 m-2 d-flex justify-content-center">
-                  <img :src="`img/sponsor/${sp.logo}`" class="card-img-top rounded" :alt="`${sp.name}`" style="height: 40px; width: auto;">
-              </div>
-              <div class="p-2 pt-0">
-                  <h3 class="h5 mb-2 text-center"><b>{{sp.name}}</b></h3>
+        <section class="section section-lg pt-0">
+    
+            <div class="container">
+                <div class="row justify-content-between">
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-5">
+                        <!-- Profile Card -->
+                        <div class="profile-card mb-5">
+                            <div class="card bg-primary shadow-soft border-light">
+                                <div style="display: flex;" class="profile-image  p-3 ml-6 mt-n0">
+                                    <img style="width: 130px;margin-left: 10px" src="./img/sponsor/agora-mini.svg" class="card-img-top" alt="Team-lead">
+                                </div>
+                                <div style="text-align: center;" class="card-body">
+                                    <h3 class="h5 mb-2"><a href="https://mini-videocalling-app-azyr1ud9b-eddie1567.vercel.app/"><b>Agora Lite</b></a></h3>
+                                    <span class="h6 font-weight-normal text-gray mb-3">Web Application</span>
+                                    <p style="color: #31344b;" class="card-text">(Team Glacier)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Profile Card -->
+                    </div>
+        
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-5">
+                        <!-- Profile Card -->
+                        <div style="text-align: center;" class="profile-card mb-5">
+                            <div class="card bg-primary shadow-soft border-light">
+                                <div class="profile-image  p-3 ml-6 mt-n0">
+                                    <img style="width: 150px;" src="./img/sponsor/crew-up.png" class="card-img-top rounded-circle" alt="Speaker">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 mb-2"><a href="https://github.com/Last-Bench-Devs/Crew-Up"><b>Crew-up</b></a></h3>
+                                    <span class="h6 font-weight-normal text-gray mb-3">Flutter Application</span>
+                                    <p style="color: #31344b;" class="card-text">(Last bench Dev)</p>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Profile Card -->
+                    </div>
 
-              </div>
-          </div>
-      </a>
-
-
-    </div>   
-
-  </section>
-
-<!--Project End -->
+                    <div class="col-12 col-md-6 col-lg-4 mb-4 mb-md-5">
+                        <!-- Profile Card -->
+                        <div style="text-align: center;" class="profile-card mb-5">
+                            <div class="card bg-primary shadow-soft border-light">
+                                <div class="profile-image  p-3 ml-6 mt-n0">
+                                    <img style="width: 120px; margin-left: 22px" src="./img/sponsor/cf.svg" class="card-img-top " alt="Christopher Avatar">
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="h5 mb-2"><a href="https://video-chat-mihir.vercel.app/"><b>Connect Fast</b></a></h3>
+                                    <span class="h6 font-weight-normal text-gray mb-3">Web Application</span>
+                                    
+                                    <p style="color: #31344b;" class="card-text">(Team Pie)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Profile Card -->
+                    </div>           
+                </div>
+            </div>
+        </section>
+        <!--TEAM END--> 

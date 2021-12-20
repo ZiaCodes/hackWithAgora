@@ -44,3 +44,6 @@ buttons.addEventListener('click', function(e) {
 //         document.getElementById("alertMsg").innerHTML = "Not a valid email ";
 //     }
 // }
+
+
+// disable scroll
