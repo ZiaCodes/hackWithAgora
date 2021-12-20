@@ -10,7 +10,7 @@ const util=require('util');
 
 const urlExists=util.promisify(require('url-exists'));
 
-const {check,validationResult}=require('express-validator/check');
+const {check,validationResult}=require('express-validator');
 
 //Flash notification
 var flash=require("connect-flash");

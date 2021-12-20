@@ -297,7 +297,7 @@ header.sticky .links:hover{
     color: #525480;
     margin: 0;
 }
-// Aimation 
+/* animation */
 #active-event{
 animation: 1s blink-slow step-end infinite;
 }
@@ -307,6 +307,13 @@ animation: 1s blink-slow step-end infinite;
     }
     50%{
         color: #525480;
+    }
+}
+
+
+@media (max-width:600px){
+    header{
+        display: none;
     }
 }
 
