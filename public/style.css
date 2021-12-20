@@ -8129,8 +8129,6 @@ a.badge-slack:focus, a.badge-slack.focus {
 
 .alert-primary {
     color: #c7c8d0;
-    background-color: #e6e8ee;
-    border-color: #d7d8df;
 }
 
 .alert-primary hr {
@@ -8157,8 +8155,7 @@ a.badge-slack:focus, a.badge-slack.focus {
 
 .alert-success {
     color: #1a5a47;
-    background-color: #296e58;
-    border-color: #195e49;
+
 }
 
 .alert-success hr {
@@ -8171,8 +8168,6 @@ a.badge-slack:focus, a.badge-slack.focus {
 
 .alert-info {
     color: #064f9f;
-    background-color: #1362b8;
-    border-color: #0352a9;
 }
 
 .alert-info hr {
@@ -8185,8 +8180,7 @@ a.badge-slack:focus, a.badge-slack.focus {
 
 .alert-warning {
     color: #d09e08;
-    background-color: #f0b913;
-    border-color: #e0a904;
+
 }
 
 .alert-warning hr {

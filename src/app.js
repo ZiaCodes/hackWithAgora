@@ -21,6 +21,7 @@ require("./db/config");
 //model
 const Register = require("./models/register");
 const Projectsubmission = require("./models/submit");
+const Question = require("./models/question");
 
 const async = require("hbs/lib/async");
 const { resolve } = require("path");
@@ -168,6 +169,28 @@ app.post("/submit", async (req,res) =>{
         console.log(error);
         req.flash("error","Something went wrong");
         res.redirect("/register");
+    }
+})
+
+
+
+//for user query
+app.post("/question", async (req,res) =>{
+    try {
+        const userQuestion = new Question({
+            name : req.body.name,
+            email : req.body.email,
+            msg : req.body.msg
+           })
+    
+        const questionSubmitted = await userQuestion.save();
+        console.log(userQuestion);
+        req.flash("success","Message sent Successfully");
+        res.redirect("/");
+    } catch (error) {
+        console.log(error);
+        req.flash("error","Something went wrong");
+        res.redirect("/");
     }
 })
 

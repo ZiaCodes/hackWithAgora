@@ -1,10 +1,19 @@
 <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary" id="contact">
     <div class="container">
+        <!-- Alert box -->
+    <div style="display: flex;  justify-content:center;align-items:center;padding: 10px" class="alert-box">
+        <div style="border: none;backgroun-color:#e4ebf5 !important" class=" alert-success" role="alert">
+  	<h3 style="color:lightgreen">{{success}} </h3>
+	</div>
+	<div style="border: none; backgroun-color:#e4ebf5 !important"  class=" alert-danger" role="alert">
+    <h3 style="color:Tomato">{{error}}</h3>
+    </div>
+    </div>
+
         <div class="row">
             <div class="col-12 col-lg-3 mb-5 mb-lg-0">
-                <img src="./img/logo.png" height="40px" alt="logo">
-                <h6>HackWithAgora</h6>
-                
+                <!-- form -->
+            {{>form}}
             </div>
 
 
