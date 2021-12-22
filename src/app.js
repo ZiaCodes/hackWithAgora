@@ -1,11 +1,8 @@
 const express = require("express");
-
 const app = express();
-
 const path = require("path");
 
 const hbs = require("hbs");
-
 const util=require('util');
 
 const urlExists=util.promisify(require('url-exists'));
@@ -18,9 +15,7 @@ var flash=require("connect-flash");
 //db file
 require("./db/config");
 
-//host name
 
-const hostname = "0.0.0.0";
 
 //model
 const Register = require("./models/register");
@@ -93,6 +88,11 @@ app.get("/download",(req,res) =>{
     res.download("theme.pdf")
 })
 
+// 404 error 
+app.use((req,res) =>{
+    res.status(404).render('error');
+})
+
 
 //creating new user data
 app.post("/register",[
@@ -136,26 +136,6 @@ app.post("/submit", async (req,res) =>{
             req.flash("error","Team is not registered");
             return res.redirect("/register");
         }
-        // var p=new Promise((resolve,reject) => {
-        //     urlExists(req.body.projectlink,(err,exists) => {
-        //         if(err){
-        //             reject(err);
-        //         }else{
-        //             resolve(exists);
-        //         }
-        //     });
-        // });
-
-        // p.then((e) => {
-        //     console.log(e);
-        //     if(!e){
-        //         req.flash("error","Project link is invalid");
-        //         res.redirect("/register");
-        //     }
-        // }).catch((err) => {
-        //     console.log(err);
-        //     res.redirect("/register","Something went wrong");
-        // });
 
 
         let isExists=await urlExists(req.body.projectlink);
@@ -212,6 +192,6 @@ app.post("/question", async (req,res) =>{
 
 
 //port listen
-app.listen(port, hostname, () => {
+app.listen(port, () => {
     console.log(`Server is running at ${port}`);
 })
