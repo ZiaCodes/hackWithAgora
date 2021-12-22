@@ -18,6 +18,10 @@ var flash=require("connect-flash");
 //db file
 require("./db/config");
 
+//host name
+
+const hostname = "0.0.0.0";
+
 //model
 const Register = require("./models/register");
 const Projectsubmission = require("./models/submit");
@@ -208,6 +212,6 @@ app.post("/question", async (req,res) =>{
 
 
 //port listen
-app.listen(port, () => {
+app.listen(port, hostname, () => {
     console.log(`Server is running at ${port}`);
 })
