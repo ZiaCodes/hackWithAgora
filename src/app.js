@@ -26,7 +26,7 @@ const async = require("hbs/lib/async");
 const { resolve } = require("path");
 
 //default port connection
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 8080
 
 //routes
 const static_path = path.join(__dirname, "../public");
