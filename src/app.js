@@ -88,11 +88,6 @@ app.get("/download",(req,res) =>{
     res.download("theme.pdf")
 })
 
-// 404 error 
-app.use((req,res) =>{
-    res.status(404).render('error');
-})
-
 
 //creating new user data
 app.post("/register",[
@@ -184,8 +179,10 @@ app.post("/question", async (req,res) =>{
     }
 })
 
-
-// auto email responsec NodeMailer
+// 404 error 
+app.use((req,res) =>{
+    res.status(404).render('error');
+})
 
 
 
