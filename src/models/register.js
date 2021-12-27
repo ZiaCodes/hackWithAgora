@@ -22,6 +22,7 @@ const participentSchema = new mongoose.Schema({
     },
     teamname: {
         type:String,
+        trim: true,
         required: true,
         unique: true
     },
