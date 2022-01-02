@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://classed:U25wr12uHEjL2eXI@cluster.cifxa.mongodb.net/hackWithAgora?retryWrites=true&w=majority",{
+mongoose.connect(" ",{
     useNewUrlParser:true,
     useUnifiedTopology:true
     
