@@ -1,7 +1,7 @@
 {
   "name": "hackwithagora",
   "version": "1.0.0",
-  "description": "HackwithAgora is a hackathon organised by JGECxAGORA ",
+  "description": "HackwithAgora is a hackathon organised by JGECxAGORA.",
   "main": "app.js",
   "scripts": {
     "server":"node src/app.js",
