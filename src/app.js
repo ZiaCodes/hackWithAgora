@@ -82,6 +82,10 @@ app.get("/guidline",(req, res) =>{
 app.get("/ranklist",(req, res) =>{
     res.render("ranklist");
 })
+//coc
+app.get("/coc",(req,res) => {
+    res.render("coc");
+})
 
 //download pdf
 app.get("/download",(req,res) =>{
