@@ -15,7 +15,7 @@
     "express-session": "^1.17.2",
     "express-validator": "^6.14.0",
     "hbs": "^4.2.0",
-    "mongoose": "^6.1.1",
+    "mongoose": "^6.4.6",
     "url-exists": "^1.0.3",
     "util": "^0.12.4"
   }
